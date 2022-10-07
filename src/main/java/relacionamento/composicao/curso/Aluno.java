@@ -21,4 +21,19 @@ public class Aluno {
         this.cursos.add(curso); //adicionar um curso
         curso.alunos.add(this); //adicionar lista de alunos no curso
     }
+        Curso obterCursoPorNome(String nome){
+
+
+            for(Curso curso : this.cursos){ //metodo para realizar a pesquisa do curso pelo nome
+                if(curso.nome.equalsIgnoreCase(nome)){
+                    return curso;
+                }
+            }
+            //se não retornar nada, retorna nulo
+            return null;
+        }
+    public String toString(){  // metodo para retornar o string no main ao inserir "System.out.println(aluno1.cursos.get(0).alunos);"
+    // a forma que retornar no toString sera a forma que o objeto retornara no main
+        return nome;
+    }
 }

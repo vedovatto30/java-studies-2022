@@ -15,13 +15,32 @@ public class CursoTeste {
 
         aluno1.adicionarCursos(curso1);
         aluno2.adicionarCursos(curso2);
+        aluno1.adicionarCursos(curso3);
+        aluno2.adicionarCursos(curso3);
+        aluno4.adicionarCursos(curso3);
 
         curso2.adicionarAluno(aluno3);
 
         for(Aluno aluno: curso1.alunos){ //buscar todos os alunos do curso 1
-            System.out.println("Estou matriculado no curso 1...");
+            System.out.println("Estou matriculado no curso - " + curso1.nome + ":");
             System.out.println("E meu nome e " + aluno.nome);
             System.out.println();
+        }
+
+        for(Aluno aluno: curso3.alunos){ //buscar todos os alunos do curso 3
+            System.out.println("Estou matriculado no curso - " + curso3.nome + ":");
+            System.out.println("E meu nome e " + aluno.nome);
+            System.out.println();
+        }
+
+        System.out.println(aluno1.cursos.get(0).alunos);
+
+        Curso cursoEncontrado = aluno1.obterCursoPorNome("Java");
+
+        if (cursoEncontrado!= null){ //se for diferente de null, ou seja, ele foi encontrado
+            System.out.println("Alunos do curso" + cursoEncontrado.alunos);
+        }else{
+            System.out.println("Curso não cadastrado");
         }
 
     }
