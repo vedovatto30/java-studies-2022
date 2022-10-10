@@ -22,7 +22,8 @@ public class Sistema {
         compra2.adicionarItem(new Produto("Iphone XX", 6.750), 125);
 
         Cliente c2 = new Cliente("Maria");
-        c1.compras.add(compra1);
+        c1.adicionarCompra(compra1); // posso adicionar a compra utilizado o metodo criado em cliente
+        c1.compras.add(compra2); // ou fazendo direto nesse formato
 
         System.out.println(c1.obterValorTotal()); //imprimindo o valor total da compra
     }
