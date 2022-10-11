@@ -1,4 +1,4 @@
-package relacionamento.composicao.loja;
+package secondExercise.composicao.loja;
 
 import java.util.ArrayList;
 import java.util.List;

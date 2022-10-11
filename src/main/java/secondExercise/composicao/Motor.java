@@ -1,6 +1,4 @@
-package relacionamento.composicao;
-
-import java.util.Scanner;
+package secondExercise.composicao;
 
 public class Motor {
 

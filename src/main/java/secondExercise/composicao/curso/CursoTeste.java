@@ -1,4 +1,4 @@
-package relacionamento.composicao.curso;
+package secondExercise.composicao.curso;
 
 public class CursoTeste {
     public static void main(String[] args) {

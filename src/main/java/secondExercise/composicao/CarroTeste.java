@@ -1,4 +1,4 @@
-package relacionamento.composicao;
+package secondExercise.composicao;
 
 public class CarroTeste {
     public static void main(String[] args) {

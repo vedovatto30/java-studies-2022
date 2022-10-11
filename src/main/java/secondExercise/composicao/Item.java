@@ -1,4 +1,4 @@
-package relacionamento.composicao;
+package secondExercise.composicao;
 
 public class Item {
 
